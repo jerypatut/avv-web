@@ -1,0 +1,539 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   AVV-Web - Jasa Pembuatan Website Profesional
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+     <a class="text-2xl font-bold text-indigo-600" href="#home" onclick="closeMobileMenu()">
+      AVV-Web
+     </a>
+     <div class="hidden md:flex space-x-8 font-semibold text-gray-700 items-center">
+      <a class="hover:text-indigo-600 transition" href="#home" onclick="closeMobileMenu()">
+       Beranda
+      </a>
+      <div class="relative group">
+       <button aria-expanded="false" aria-haspopup="true" class="hover:text-indigo-600 transition flex items-center space-x-1 focus:outline-none" id="services-menu">
+        <span>
+         Semua Layanan
+        </span>
+        <i class="fas fa-chevron-down text-sm">
+        </i>
+       </button>
+       <div aria-labelledby="services-menu" class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-200 z-40">
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="#services-all" onclick="closeMobileMenu()">
+         Semua Layanan
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="perusahaan.html" onclick="closeMobileMenu()">
+         Website Perusahaan
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="tokoonline.html" onclick="closeMobileMenu()">
+         Toko Online
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="perusahaan.html" onclick="closeMobileMenu()">
+         Website Portfolio
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-mobile.html" onclick="closeMobileMenu()">
+         Website Mobile Friendly
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="index (13).html" onclick="closeMobileMenu()">
+         Desain Kustom
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="maintenance.html" onclick="closeMobileMenu()">
+         Maintenance &amp; Support
+        </a>
+       </div>
+      </div>
+      <a class="hover:text-indigo-600 transition" href="#portfolio" onclick="closeMobileMenu()">
+       Portofolio
+      </a>
+      <a class="hover:text-indigo-600 transition" href="#about" onclick="closeMobileMenu()">
+       Tentang Kami
+      </a>
+      <a class="hover:text-indigo-600 transition" href="#faq" onclick="closeMobileMenu()">
+       FAQ
+      </a>
+      <a class="hover:text-indigo-600 transition" href="#contact" onclick="closeMobileMenu()">
+       Kontak
+      </a>
+      <a class="hover:text-indigo-600 transition" href="#harga" onclick="closeMobileMenu()">
+       Harga
+      </a>
+     </div>
+     <div class="md:hidden">
+      <button aria-label="Toggle menu" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-600" id="menu-btn">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#home" onclick="closeMobileMenu()">
+     Beranda
+    </a>
+    <details class="group border-b border-gray-200">
+     <summary class="px-4 py-3 cursor-pointer flex justify-between items-center hover:bg-indigo-50 transition font-semibold text-gray-700">
+      Semua Layanan
+      <i class="fas fa-chevron-down text-sm group-open:rotate-180 transition-transform">
+      </i>
+     </summary>
+     <div class="flex flex-col bg-white">
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="#services-all" onclick="closeMobileMenu()">
+       Semua Layanan
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-perusahaan.html" onclick="closeMobileMenu()">
+       Website Perusahaan
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="toko-online.html" onclick="closeMobileMenu()">
+       Toko Online
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-portfolio.html" onclick="closeMobileMenu()">
+       Website Portfolio
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-mobile.html" onclick="closeMobileMenu()">
+       Website Mobile Friendly
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="desain-kustom.html" onclick="closeMobileMenu()">
+       Desain Kustom
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="maintenance-support.html" onclick="closeMobileMenu()">
+       Maintenance &amp; Support
+      </a>
+     </div>
+    </details>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#portfolio" onclick="closeMobileMenu()">
+     Portofolio
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#about" onclick="closeMobileMenu()">
+     Tentang Kami
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="#faq" onclick="closeMobileMenu()">
+     FAQ
+    </a>
+    <a class="block px-4 py-3 hover:bg-indigo-50 transition" href="#contact" onclick="closeMobileMenu()">
+     Kontak
+    </a>
+    <a class="block px-4 py-3 hover:bg-indigo-50 transition" href="#harga" onclick="closeMobileMenu()">
+     Harga
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="pt-24 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white" id="home">
+   <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:items-start md:justify-between gap-12">
+    <div class="md:w-1/2 space-y-6">
+     <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+      AVV-Web
+      <br/>
+      Jasa Pembuatan Website Profesional
+     </h1>
+     <p class="text-lg sm:text-xl max-w-xl">
+      Kami menyediakan layanan pembuatan website untuk semua jenis bisnis dan desain. Website yang responsif, modern, dan sesuai kebutuhan Anda.
+     </p>
+     <a class="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-50 transition" href="#contact" onclick="closeMobileMenu()">
+      Hubungi Kami Sekarang
+     </a>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+     <img alt="Ilustrasi seorang desainer dan developer sedang membuat website modern di laptop dengan tampilan antarmuka yang menarik dan profesional" class="rounded-lg shadow-lg w-full max-w-md" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/71494f24-5890-40d6-0066-c702c5618c2b.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Services Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="services-all">
+   <h2 class="text-3xl font-bold text-center text-indigo-700 mb-12">
+    Layanan Kami
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition" id="service-company">
+     <i class="fas fa-laptop-code text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Website Perusahaan
+     </h3>
+     <p class="text-gray-600">
+      Membuat website profesional untuk perusahaan Anda dengan desain elegan dan fungsionalitas lengkap.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition" id="service-ecommerce">
+     <i class="fas fa-shopping-cart text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Toko Online
+     </h3>
+     <p class="text-gray-600">
+      Solusi e-commerce lengkap dengan sistem pembayaran dan manajemen produk yang mudah digunakan.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition" id="service-portfolio">
+     <i class="fas fa-pencil-ruler text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Website Portfolio
+     </h3>
+     <p class="text-gray-600">
+      Tampilkan karya dan profil Anda dengan website portfolio yang menarik dan responsif.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition" id="service-mobile">
+     <i class="fas fa-mobile-alt text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Website Mobile Friendly
+     </h3>
+     <p class="text-gray-600">
+      Semua website yang kami buat sudah dioptimalkan untuk tampil sempurna di perangkat mobile.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition" id="service-design">
+     <i class="fas fa-paint-brush text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Desain Kustom
+     </h3>
+     <p class="text-gray-600">
+      Desain website sesuai keinginan Anda, unik dan berbeda dari yang lain, sesuai brand dan target pasar.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition" id="service-maintenance">
+     <i class="fas fa-cogs text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Maintenance &amp; Support
+     </h3>
+     <p class="text-gray-600">
+      Layanan perawatan website dan dukungan teknis agar website Anda selalu up-to-date dan aman.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Team Section -->
+  <section class="bg-indigo-50 py-20" id="team">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-indigo-700 text-center mb-12">
+     Tim Profesional Kami
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <img alt="Foto profil seorang desainer web profesional dengan latar belakang studio desain modern" class="w-32 h-32 rounded-full object-cover mb-4" height="128" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d73f2d27-9cdb-478a-e237-6226bd6861f2.jpg" width="128"/>
+      <h3 class="font-semibold text-lg text-indigo-700">
+       Rina Sari
+      </h3>
+      <p class="text-gray-600 text-sm">
+       Web Designer
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <img alt="Foto profil seorang developer web berpengalaman dengan latar belakang ruang kerja modern" class="w-32 h-32 rounded-full object-cover mb-4" height="128" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c4b2136e-6945-4e49-e927-3d09476b5c01.jpg" width="128"/>
+      <h3 class="font-semibold text-lg text-indigo-700">
+       Agus Pratama
+      </h3>
+      <p class="text-gray-600 text-sm">
+       Web Developer
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <img alt="Foto profil seorang spesialis UX/UI dengan latar belakang kantor kreatif" class="w-32 h-32 rounded-full object-cover mb-4" height="128" loading="lazy" src="https://storage.googleapis.com/a1aa/image/179bc216-2efa-4672-c11e-5506dbdea355.jpg" width="128"/>
+      <h3 class="font-semibold text-lg text-indigo-700">
+       Maya Putri
+      </h3>
+      <p class="text-gray-600 text-sm">
+       UX/UI Specialist
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+      <img alt="Foto profil seorang manajer proyek IT dengan latar belakang ruang rapat modern" class="w-32 h-32 rounded-full object-cover mb-4" height="128" loading="lazy" src="https://storage.googleapis.com/a1aa/image/08b8a940-f4c0-43ff-2fb3-dc54c20ac4de.jpg" width="128"/>
+      <h3 class="font-semibold text-lg text-indigo-700">
+       Budi Santoso
+      </h3>
+      <p class="text-gray-600 text-sm">
+       Project Manager
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- FAQ Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="faq">
+   <h2 class="text-3xl font-bold text-indigo-700 text-center mb-12">
+    Pertanyaan yang Sering Diajukan (FAQ)
+   </h2>
+   <div class="max-w-4xl mx-auto space-y-6">
+    <details class="bg-white rounded-lg shadow-md p-6" open="">
+     <summary class="font-semibold cursor-pointer text-indigo-700 text-lg select-none">
+      Berapa lama waktu pembuatan website?
+     </summary>
+     <p class="mt-4 text-gray-700">
+      Waktu pembuatan website bervariasi tergantung jenis dan kompleksitas proyek, biasanya antara 2 hingga 6 minggu.
+     </p>
+    </details>
+    <details class="bg-white rounded-lg shadow-md p-6">
+     <summary class="font-semibold cursor-pointer text-indigo-700 text-lg select-none">
+      Apakah website yang dibuat responsif untuk perangkat mobile?
+     </summary>
+     <p class="mt-4 text-gray-700">
+      Ya, semua website yang kami buat sudah dioptimalkan agar tampil sempurna di semua perangkat, termasuk smartphone dan tablet.
+     </p>
+    </details>
+    <details class="bg-white rounded-lg shadow-md p-6">
+     <summary class="font-semibold cursor-pointer text-indigo-700 text-lg select-none">
+      Apakah saya bisa meminta desain kustom sesuai keinginan?
+     </summary>
+     <p class="mt-4 text-gray-700">
+      Tentu saja, kami menyediakan layanan desain kustom yang disesuaikan dengan kebutuhan dan brand Anda.
+     </p>
+    </details>
+    <details class="bg-white rounded-lg shadow-md p-6">
+     <summary class="font-semibold cursor-pointer text-indigo-700 text-lg select-none">
+      Apakah ada layanan maintenance setelah website selesai dibuat?
+     </summary>
+     <p class="mt-4 text-gray-700">
+      Ya, kami menyediakan layanan maintenance dan support untuk memastikan website Anda selalu up-to-date dan aman.
+     </p>
+    </details>
+    <details class="bg-white rounded-lg shadow-md p-6">
+     <summary class="font-semibold cursor-pointer text-indigo-700 text-lg select-none">
+      Bagaimana cara memulai proyek dengan AVV-Web?
+     </summary>
+     <p class="mt-4 text-gray-700">
+      Anda bisa menghubungi kami melalui formulir kontak di bagian bawah halaman atau langsung mengirim email ke info@avv-web.co.id.
+     </p>
+    </details>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-indigo-600 text-white py-20" id="contact">
+   <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">
+     Hubungi Kami
+    </h2>
+    <form action="#" class="space-y-6" method="POST" novalidate="">
+     <div>
+      <label class="block mb-2 font-semibold" for="name">
+       Nama Lengkap
+      </label>
+      <input class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="email">
+       Email
+      </label>
+      <input class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300" id="email" name="email" placeholder="Masukkan email Anda" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="phone">
+       Nomor Telepon
+      </label>
+      <input class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300" id="phone" name="phone" placeholder="Masukkan nomor telepon (opsional)" type="tel"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="message">
+       Pesan
+      </label>
+      <textarea class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300 resize-none" id="message" name="message" placeholder="Tuliskan pesan atau kebutuhan website Anda" required="" rows="5"></textarea>
+     </div>
+     <div class="text-center">
+      <button class="bg-white text-indigo-600 font-semibold px-10 py-3 rounded-lg shadow-lg hover:bg-indigo-50 transition" type="submit">
+       Kirim Pesan
+      </button>
+     </div>
+    </form>
+    <div class="mt-12 text-center space-y-4">
+     <p>
+      <i class="fas fa-phone-alt mr-2">
+      </i>
+      +62 812-3456-7890
+     </p>
+     <p>
+      <i class="fas fa-envelope mr-2">
+      </i>
+      info@avv-web.co.id
+     </p>
+     <p>
+      <i class="fas fa-map-marker-alt mr-2">
+      </i>
+      Jl. Merdeka No.123, Jakarta, Indonesia
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Harga Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="harga">
+   <h2 class="text-3xl font-bold text-indigo-700 text-center mb-12">
+    Daftar Harga Layanan Kami
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-laptop-code text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Website Perusahaan
+     </h3>
+     <p class="text-gray-600 mb-6">
+      Website profesional dengan desain elegan dan fungsionalitas lengkap.
+     </p>
+     <div class="text-indigo-700 font-extrabold text-3xl mb-4">
+      Rp3.000.000
+     </div>
+     <p class="text-gray-500 text-sm mb-6">
+      Harga mulai, bisa disesuaikan dengan kebutuhan fitur dan desain.
+     </p>
+     <a class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition" href="website-perusahaan.html#contact" onclick="closeMobileMenu()">
+      Pesan Sekarang
+     </a>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-shopping-cart text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Toko Online
+     </h3>
+     <p class="text-gray-600 mb-6">
+      Solusi e-commerce lengkap dengan sistem pembayaran dan manajemen produk.
+     </p>
+     <div class="text-indigo-700 font-extrabold text-3xl mb-4">
+      Rp4.500.000
+     </div>
+     <p class="text-gray-500 text-sm mb-6">
+      Harga mulai, dapat disesuaikan dengan fitur tambahan.
+     </p>
+     <a class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition" href="toko-online.html#contact" onclick="closeMobileMenu()">
+      Pesan Sekarang
+     </a>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-pencil-ruler text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Website Portfolio
+     </h3>
+     <p class="text-gray-600 mb-6">
+      Website portfolio menarik dan responsif untuk menampilkan karya Anda.
+     </p>
+     <div class="text-indigo-700 font-extrabold text-3xl mb-4">
+      Rp2.500.000
+     </div>
+     <p class="text-gray-500 text-sm mb-6">
+      Harga mulai, bisa disesuaikan dengan kebutuhan konten dan fitur.
+     </p>
+     <a class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition" href="website-portfolio.html#contact" onclick="closeMobileMenu()">
+      Pesan Sekarang
+     </a>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-mobile-alt text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Website Mobile Friendly
+     </h3>
+     <p class="text-gray-600 mb-6">
+      Website yang dioptimalkan untuk tampil sempurna di perangkat mobile.
+     </p>
+     <div class="text-indigo-700 font-extrabold text-3xl mb-4">
+      Rp3.500.000
+     </div>
+     <p class="text-gray-500 text-sm mb-6">
+      Harga mulai, termasuk optimasi mobile dan responsif.
+     </p>
+     <a class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition" href="website-mobile.html#contact" onclick="closeMobileMenu()">
+      Pesan Sekarang
+     </a>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-paint-brush text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Desain Kustom
+     </h3>
+     <p class="text-gray-600 mb-6">
+      Desain website unik dan sesuai brand Anda, berbeda dari yang lain.
+     </p>
+     <div class="text-indigo-700 font-extrabold text-3xl mb-4">
+      Rp5.000.000
+     </div>
+     <p class="text-gray-500 text-sm mb-6">
+      Harga mulai, tergantung kompleksitas desain dan fitur.
+     </p>
+     <a class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition" href="desain-kustom.html#contact" onclick="closeMobileMenu()">
+      Pesan Sekarang
+     </a>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-cogs text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Maintenance &amp; Support
+     </h3>
+     <p class="text-gray-600 mb-6">
+      Layanan perawatan dan dukungan teknis agar website selalu up-to-date dan aman.
+     </p>
+     <div class="text-indigo-700 font-extrabold text-3xl mb-4">
+      Rp1.000.000 / bulan
+     </div>
+     <p class="text-gray-500 text-sm mb-6">
+      Paket bulanan dengan layanan lengkap dan responsif.
+     </p>
+     <a class="bg-indigo-600 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 transition" href="maintenance-support.html#contact" onclick="closeMobileMenu()">
+      Pesan Sekarang
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-6 mt-12">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm space-y-4 md:space-y-0">
+    <p>
+     © 2024 AVV-Web. Semua hak cipta dilindungi.
+    </p>
+    <div class="flex space-x-6 text-indigo-600 text-xl">
+     <a aria-label="Facebook" class="hover:text-indigo-800 transition" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-facebook-square">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-indigo-800 transition" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-twitter-square">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-indigo-800 transition" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-instagram-square">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-indigo-800 transition" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById("menu-btn");
+   const mobileMenu = document.getElementById("mobile-menu");
+
+   menuBtn.addEventListener("click", () => {
+     mobileMenu.classList.toggle("hidden");
+   });
+
+   function closeMobileMenu() {
+     if (!mobileMenu.classList.contains("hidden")) {
+       mobileMenu.classList.add("hidden");
+     }
+   }
+  </script>
+ </body>
+</html>

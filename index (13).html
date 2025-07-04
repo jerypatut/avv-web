@@ -1,0 +1,438 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   AVV-Web - Desain Kustom Profesional
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+     <a class="text-2xl font-bold text-indigo-600" href="index.html#home">
+      AVV-Web
+     </a>
+     <div class="hidden md:flex space-x-8 font-semibold text-gray-700 items-center">
+      <a class="hover:text-indigo-600 transition" href="index.html#home">
+       Beranda
+      </a>
+      <div class="relative group">
+       <button aria-expanded="false" aria-haspopup="true" class="hover:text-indigo-600 transition flex items-center space-x-1 focus:outline-none" id="services-menu">
+        <span>
+         Semua Layanan
+        </span>
+        <i class="fas fa-chevron-down text-sm">
+        </i>
+       </button>
+       <div aria-labelledby="services-menu" class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-200 z-40">
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="index.html#services-all">
+         Semua Layanan
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-perusahaan.html">
+         Website Perusahaan
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="toko-online.html">
+         Toko Online
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-portfolio.html">
+         Website Portfolio
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-mobile.html">
+         Website Mobile Friendly
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="desain-kustom.html">
+         Desain Kustom
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="maintenance-support.html">
+         Maintenance &amp; Support
+        </a>
+       </div>
+      </div>
+      <a class="hover:text-indigo-600 transition" href="index.html#portfolio">
+       Portofolio
+      </a>
+      <a class="hover:text-indigo-600 transition" href="index.html#about">
+       Tentang Kami
+      </a>
+      <a class="hover:text-indigo-600 transition" href="index.html#faq">
+       FAQ
+      </a>
+      <a class="hover:text-indigo-600 transition" href="index.html#contact">
+       Kontak
+      </a>
+      <a class="hover:text-indigo-600 transition" href="index.html#harga">
+       Harga
+      </a>
+     </div>
+     <div class="md:hidden">
+      <button aria-label="Toggle menu" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-600" id="menu-btn">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="index.html#home">
+     Beranda
+    </a>
+    <details class="group border-b border-gray-200">
+     <summary class="px-4 py-3 cursor-pointer flex justify-between items-center hover:bg-indigo-50 transition font-semibold text-gray-700">
+      Semua Layanan
+      <i class="fas fa-chevron-down text-sm group-open:rotate-180 transition-transform">
+      </i>
+     </summary>
+     <div class="flex flex-col bg-white">
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="index.html#services-all">
+       Semua Layanan
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-perusahaan.html">
+       Website Perusahaan
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="toko-online.html">
+       Toko Online
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-portfolio.html">
+       Website Portfolio
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-mobile.html">
+       Website Mobile Friendly
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="desain-kustom.html">
+       Desain Kustom
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="maintenance-support.html">
+       Maintenance &amp; Support
+      </a>
+     </div>
+    </details>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="index.html#portfolio">
+     Portofolio
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="index.html#about">
+     Tentang Kami
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="index.html#faq">
+     FAQ
+    </a>
+    <a class="block px-4 py-3 hover:bg-indigo-50 transition" href="index.html#contact">
+     Kontak
+    </a>
+    <a class="block px-4 py-3 hover:bg-indigo-50 transition" href="index.html#harga">
+     Harga
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="pt-24 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white" id="home">
+   <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:items-start md:justify-between gap-12">
+    <div class="md:w-1/2 space-y-6">
+     <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+      Desain Kustom
+      <br/>
+      Solusi Desain Website Unik dan Profesional
+     </h1>
+     <p class="text-lg sm:text-xl max-w-xl">
+      Kami menyediakan layanan desain website kustom yang sesuai dengan brand dan kebutuhan bisnis Anda. Desain yang unik, menarik, dan responsif untuk meningkatkan citra profesional Anda.
+     </p>
+     <a class="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-50 transition" href="#contact">
+      Konsultasi Gratis Sekarang
+     </a>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+     <img alt="Ilustrasi proses desain website kustom dengan sketsa wireframe dan elemen desain digital di layar komputer modern" class="rounded-lg shadow-lg w-full max-w-md" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0b0764d1-bd5b-44b5-f26a-fafa4cfb49e5.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Why Choose Us Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+   <h2 class="text-3xl font-bold text-indigo-700 text-center mb-12">
+    Mengapa Memilih Layanan Desain Kustom Kami?
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-palette text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Desain Unik &amp; Kreatif
+     </h3>
+     <p class="text-gray-600">
+      Setiap desain dibuat khusus untuk mencerminkan identitas brand Anda dengan gaya yang unik dan menarik.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-mobile-alt text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Responsif &amp; Mobile Friendly
+     </h3>
+     <p class="text-gray-600">
+      Desain kami dioptimalkan agar tampil sempurna di semua perangkat, dari desktop hingga smartphone.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-users-cog text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Kolaborasi &amp; Support Profesional
+     </h3>
+     <p class="text-gray-600">
+      Tim kami bekerja sama dengan Anda secara intensif untuk memastikan hasil desain sesuai harapan.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Portfolio Section -->
+  <section class="bg-indigo-50 py-20" id="portfolio">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-indigo-700 text-center mb-12">
+     Contoh Desain Kustom Kami
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+     <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img alt="Tampilan website kustom dengan desain modern dan warna biru dominan, menampilkan halaman utama perusahaan teknologi" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/fb5f7b08-904c-42ec-70a6-d21e4dc5b8ca.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="font-semibold text-lg text-indigo-700 mb-2">
+        Website Perusahaan Teknologi
+       </h3>
+       <p class="text-gray-600 text-sm">
+        Desain modern dengan fokus pada teknologi dan inovasi, cocok untuk startup dan perusahaan IT.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img alt="Tampilan website kustom dengan desain minimalis dan warna pastel, menampilkan portfolio fotografer profesional" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1914be01-97c6-4561-bc72-16632eb185c3.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="font-semibold text-lg text-indigo-700 mb-2">
+        Website Portfolio Fotografer
+       </h3>
+       <p class="text-gray-600 text-sm">
+        Desain minimalis dan elegan untuk menampilkan karya fotografi dengan visual yang kuat.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img alt="Tampilan website kustom dengan desain kreatif dan warna cerah, menampilkan halaman toko online fashion" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d349be33-39c5-442c-e3a5-9c565ddc74cc.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="font-semibold text-lg text-indigo-700 mb-2">
+        Toko Online Fashion
+       </h3>
+       <p class="text-gray-600 text-sm">
+        Desain cerah dan dinamis yang menarik perhatian untuk toko online produk fashion.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img alt="Tampilan website kustom dengan desain profesional dan warna netral, menampilkan halaman konsultasi bisnis" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4dd5b976-7627-4cda-b4f5-649828dc9549.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="font-semibold text-lg text-indigo-700 mb-2">
+        Website Konsultasi Bisnis
+       </h3>
+       <p class="text-gray-600 text-sm">
+        Desain profesional dan bersih untuk layanan konsultasi dan jasa bisnis.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img alt="Tampilan website kustom dengan desain artistik dan warna gelap, menampilkan halaman portfolio seniman digital" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2faadcf0-7939-4d2b-1773-3d6e38aad14b.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="font-semibold text-lg text-indigo-700 mb-2">
+        Portfolio Seniman Digital
+       </h3>
+       <p class="text-gray-600 text-sm">
+        Desain artistik dengan nuansa gelap untuk menonjolkan karya seni digital.
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow-md overflow-hidden">
+      <img alt="Tampilan website kustom dengan desain elegan dan warna emas, menampilkan halaman restoran mewah" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/993fdc72-8662-48b6-b581-e641108468b8.jpg" width="600"/>
+      <div class="p-6">
+       <h3 class="font-semibold text-lg text-indigo-700 mb-2">
+        Website Restoran Mewah
+       </h3>
+       <p class="text-gray-600 text-sm">
+        Desain elegan dan mewah untuk restoran dengan fokus pada pengalaman pelanggan.
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Process Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20">
+   <h2 class="text-3xl font-bold text-indigo-700 text-center mb-12">
+    Proses Desain Kustom Kami
+   </h2>
+   <div class="space-y-12 max-w-4xl mx-auto">
+    <div class="flex flex-col md:flex-row items-center md:space-x-8">
+     <div class="flex-shrink-0 mb-4 md:mb-0">
+      <div class="w-16 h-16 rounded-full bg-indigo-600 text-white flex items-center justify-center text-2xl font-bold">
+       1
+      </div>
+     </div>
+     <div>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+       Konsultasi &amp; Briefing
+      </h3>
+      <p class="text-gray-600">
+       Kami berdiskusi dengan Anda untuk memahami kebutuhan, visi, dan tujuan desain website Anda.
+      </p>
+     </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center md:space-x-8">
+     <div class="flex-shrink-0 mb-4 md:mb-0">
+      <div class="w-16 h-16 rounded-full bg-indigo-600 text-white flex items-center justify-center text-2xl font-bold">
+       2
+      </div>
+     </div>
+     <div>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+       Pembuatan Wireframe &amp; Mockup
+      </h3>
+      <p class="text-gray-600">
+       Tim desain kami membuat wireframe dan mockup untuk memberikan gambaran visual awal.
+      </p>
+     </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center md:space-x-8">
+     <div class="flex-shrink-0 mb-4 md:mb-0">
+      <div class="w-16 h-16 rounded-full bg-indigo-600 text-white flex items-center justify-center text-2xl font-bold">
+       3
+      </div>
+     </div>
+     <div>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+       Revisi &amp; Persetujuan
+      </h3>
+      <p class="text-gray-600">
+       Anda memberikan masukan dan kami melakukan revisi hingga desain sesuai dengan harapan.
+      </p>
+     </div>
+    </div>
+    <div class="flex flex-col md:flex-row items-center md:space-x-8">
+     <div class="flex-shrink-0 mb-4 md:mb-0">
+      <div class="w-16 h-16 rounded-full bg-indigo-600 text-white flex items-center justify-center text-2xl font-bold">
+       4
+      </div>
+     </div>
+     <div>
+      <h3 class="text-xl font-semibold text-indigo-700 mb-2">
+       Finalisasi &amp; Implementasi
+      </h3>
+      <p class="text-gray-600">
+       Desain final diserahkan dan kami bantu implementasi ke website Anda.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-indigo-600 text-white py-20" id="contact">
+   <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">
+     Konsultasi &amp; Pesan Desain Kustom
+    </h2>
+    <form action="#" class="space-y-6" method="POST" novalidate="">
+     <div>
+      <label class="block mb-2 font-semibold" for="name">
+       Nama Lengkap
+      </label>
+      <input class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="email">
+       Email
+      </label>
+      <input class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300" id="email" name="email" placeholder="Masukkan email Anda" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="phone">
+       Nomor Telepon
+      </label>
+      <input class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300" id="phone" name="phone" placeholder="Masukkan nomor telepon (opsional)" type="tel"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="project-details">
+       Detail Proyek / Kebutuhan Desain
+      </label>
+      <textarea class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300 resize-none" id="project-details" name="project-details" placeholder="Jelaskan kebutuhan desain website Anda secara singkat" required="" rows="5"></textarea>
+     </div>
+     <div class="text-center">
+      <button class="bg-white text-indigo-600 font-semibold px-10 py-3 rounded-lg shadow-lg hover:bg-indigo-50 transition" type="submit">
+       Kirim Permintaan
+      </button>
+     </div>
+    </form>
+    <div class="mt-12 text-center space-y-4">
+     <p>
+      <i class="fas fa-phone-alt mr-2">
+      </i>
+      +62 812-3456-7890
+     </p>
+     <p>
+      <i class="fas fa-envelope mr-2">
+      </i>
+      info@avv-web.co.id
+     </p>
+     <p>
+      <i class="fas fa-map-marker-alt mr-2">
+      </i>
+      Jl. Merdeka No.123, Jakarta, Indonesia
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-6 mt-12">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm space-y-4 md:space-y-0">
+    <p>
+     © 2024 AVV-Web. Semua hak cipta dilindungi.
+    </p>
+    <div class="flex space-x-6 text-indigo-600 text-xl">
+     <a aria-label="Facebook" class="hover:text-indigo-800 transition" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-facebook-square">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-indigo-800 transition" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-twitter-square">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-indigo-800 transition" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-instagram-square">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-indigo-800 transition" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById("menu-btn");
+   const mobileMenu = document.getElementById("mobile-menu");
+
+   menuBtn.addEventListener("click", () => {
+     mobileMenu.classList.toggle("hidden");
+   });
+
+   // Close mobile menu on link click
+   mobileMenu.querySelectorAll("a").forEach((link) => {
+     link.addEventListener("click", () => {
+       mobileMenu.classList.add("hidden");
+     });
+   });
+  </script>
+ </body>
+</html>

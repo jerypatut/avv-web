@@ -1,0 +1,281 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   AVV-Web - Maintenance &amp; Support
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md fixed w-full z-30">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16 items-center">
+     <a class="text-2xl font-bold text-indigo-600" href="index.html">
+      AVV-Web
+     </a>
+     <div class="hidden md:flex space-x-8 font-semibold text-gray-700 items-center">
+      <a class="hover:text-indigo-600 transition" href="index.html#home">
+       Beranda
+      </a>
+      <div class="relative group">
+       <button aria-expanded="false" aria-haspopup="true" class="hover:text-indigo-600 transition flex items-center space-x-1 focus:outline-none" id="services-menu">
+        <span>
+         Semua Layanan
+        </span>
+        <i class="fas fa-chevron-down text-sm">
+        </i>
+       </button>
+       <div aria-labelledby="services-menu" class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-opacity duration-200 z-40">
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="index.html#services-all">
+         Semua Layanan
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-perusahaan.html">
+         Website Perusahaan
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="toko-online.html">
+         Toko Online
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-portfolio.html">
+         Website Portfolio
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-mobile.html">
+         Website Mobile Friendly
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="desain-kustom.html">
+         Desain Kustom
+        </a>
+        <a class="block px-4 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="maintenance-support.html">
+         Maintenance &amp; Support
+        </a>
+       </div>
+      </div>
+      <a class="hover:text-indigo-600 transition" href="index.html#portfolio">
+       Portofolio
+      </a>
+      <a class="hover:text-indigo-600 transition" href="index.html#about">
+       Tentang Kami
+      </a>
+      <a class="hover:text-indigo-600 transition" href="index.html#contact">
+       Kontak
+      </a>
+     </div>
+     <div class="md:hidden">
+      <button aria-label="Toggle menu" class="text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-600" id="menu-btn">
+       <i class="fas fa-bars fa-lg">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="hidden md:hidden bg-white shadow-md" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="index.html#home">
+     Beranda
+    </a>
+    <details class="group border-b border-gray-200">
+     <summary class="px-4 py-3 cursor-pointer flex justify-between items-center hover:bg-indigo-50 transition font-semibold text-gray-700">
+      Semua Layanan
+      <i class="fas fa-chevron-down text-sm group-open:rotate-180 transition-transform">
+      </i>
+     </summary>
+     <div class="flex flex-col bg-white">
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="index.html#services-all">
+       Semua Layanan
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-perusahaan.html">
+       Website Perusahaan
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="toko-online.html">
+       Toko Online
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-portfolio.html">
+       Website Portfolio
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="website-mobile.html">
+       Website Mobile Friendly
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="desain-kustom.html">
+       Desain Kustom
+      </a>
+      <a class="px-6 py-2 text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 transition" href="maintenance-support.html">
+       Maintenance &amp; Support
+      </a>
+     </div>
+    </details>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="index.html#portfolio">
+     Portofolio
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-indigo-50 transition" href="index.html#about">
+     Tentang Kami
+    </a>
+    <a class="block px-4 py-3 hover:bg-indigo-50 transition" href="index.html#contact">
+     Kontak
+    </a>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <section class="pt-24 bg-gradient-to-r from-indigo-600 to-indigo-400 text-white" id="hero">
+   <div class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center md:items-start md:justify-between">
+    <div class="md:w-1/2 space-y-6">
+     <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight">
+      Layanan Maintenance &amp; Support
+     </h1>
+     <p class="text-lg sm:text-xl max-w-xl">
+      Pastikan website Anda selalu up-to-date, aman, dan berjalan lancar dengan
+          layanan maintenance dan support profesional dari kami.
+     </p>
+     <a class="inline-block bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-indigo-50 transition" href="#contact">
+      Konsultasi Sekarang
+     </a>
+    </div>
+    <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+     <img alt="Ilustrasi teknisi IT sedang melakukan maintenance dan support website dengan laptop dan alat monitoring" class="rounded-lg shadow-lg w-full max-w-md" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/71fc3a75-e280-41df-3dd6-473c1e4e44ef.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Features Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20" id="features">
+   <h2 class="text-3xl font-bold text-indigo-700 text-center mb-12">
+    Keunggulan Layanan Maintenance &amp; Support Kami
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-sync-alt text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Update Berkala
+     </h3>
+     <p class="text-gray-600">
+      Kami melakukan update rutin untuk menjaga performa dan keamanan website Anda.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-shield-alt text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Keamanan Terjamin
+     </h3>
+     <p class="text-gray-600">
+      Proteksi dari serangan dan kerentanan dengan monitoring dan backup berkala.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-8 flex flex-col items-center text-center hover:shadow-indigo-300 transition">
+     <i class="fas fa-headset text-indigo-600 text-5xl mb-6">
+     </i>
+     <h3 class="text-xl font-semibold mb-3">
+      Support 24/7
+     </h3>
+     <p class="text-gray-600">
+      Tim support kami siap membantu Anda kapan saja untuk masalah teknis dan konsultasi.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-indigo-600 text-white py-20" id="contact">
+   <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">
+     Konsultasi Maintenance &amp; Support
+    </h2>
+    <form action="#" class="space-y-6" method="POST" novalidate="">
+     <div>
+      <label class="block mb-2 font-semibold" for="name">
+       Nama Lengkap
+      </label>
+      <input class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300" id="name" name="name" placeholder="Masukkan nama lengkap Anda" required="" type="text"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="email">
+       Email
+      </label>
+      <input class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300" id="email" name="email" placeholder="Masukkan email Anda" required="" type="email"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="phone">
+       Nomor Telepon
+      </label>
+      <input class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300" id="phone" name="phone" placeholder="Masukkan nomor telepon (opsional)" type="tel"/>
+     </div>
+     <div>
+      <label class="block mb-2 font-semibold" for="message">
+       Pesan
+      </label>
+      <textarea class="w-full rounded-md px-4 py-3 text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-300 resize-none" id="message" name="message" placeholder="Tuliskan kebutuhan maintenance &amp; support Anda" required="" rows="5"></textarea>
+     </div>
+     <div class="text-center">
+      <button class="bg-white text-indigo-600 font-semibold px-10 py-3 rounded-lg shadow-lg hover:bg-indigo-50 transition" type="submit">
+       Kirim Pesan
+      </button>
+     </div>
+    </form>
+    <div class="mt-12 text-center space-y-4">
+     <p>
+      <i class="fas fa-phone-alt mr-2">
+      </i>
+      +62 812-3456-7890
+     </p>
+     <p>
+      <i class="fas fa-envelope mr-2">
+      </i>
+      info@avv-web.co.id
+     </p>
+     <p>
+      <i class="fas fa-map-marker-alt mr-2">
+      </i>
+      Jl. Merdeka No.123, Jakarta, Indonesia
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200 py-6 mt-12">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-600 text-sm space-y-4 md:space-y-0">
+    <p>
+     © 2024 AVV-Web. Semua hak cipta dilindungi.
+    </p>
+    <div class="flex space-x-6 text-indigo-600 text-xl">
+     <a aria-label="Facebook" class="hover:text-indigo-800 transition" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-facebook-square">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-indigo-800 transition" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-twitter-square">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-indigo-800 transition" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-instagram-square">
+      </i>
+     </a>
+     <a aria-label="LinkedIn" class="hover:text-indigo-800 transition" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-linkedin">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById("menu-btn");
+   const mobileMenu = document.getElementById("mobile-menu");
+
+   menuBtn.addEventListener("click", () => {
+     mobileMenu.classList.toggle("hidden");
+   });
+
+   // Close mobile menu on link click
+   mobileMenu.querySelectorAll("a").forEach((link) => {
+     link.addEventListener("click", () => {
+       mobileMenu.classList.add("hidden");
+     });
+   });
+  </script>
+ </body>
+</html>

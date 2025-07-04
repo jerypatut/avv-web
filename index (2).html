@@ -1,0 +1,581 @@
+<html class="scroll-smooth" lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Flores &amp; Komodo Adventures | FloresGoldKomodo
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Parallax effect for testimonials */
+    .parallax {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-amber-600 fixed w-full z-30 top-0 shadow-md">
+   <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-16">
+     <a class="text-white font-extrabold text-xl sm:text-2xl" href="#">
+      FloresGoldKomodo
+     </a>
+     <div class="hidden md:flex space-x-8">
+      <a class="text-amber-100 hover:text-white font-semibold transition" href="#">
+       Home
+      </a>
+      <a class="text-amber-100 hover:text-white font-semibold transition" href="#about-us">
+       About
+      </a>
+      <a class="text-amber-100 hover:text-white font-semibold transition" href="#contact">
+       Contact
+      </a>
+      <a class="text-amber-100 hover:text-white font-semibold transition" href="#blog">
+       Blog
+      </a>
+     </div>
+     <div class="md:hidden">
+      <button aria-label="Toggle menu" class="text-amber-100 focus:outline-none focus:ring-2 focus:ring-white" id="mobile-menu-button">
+       <i class="fas fa-bars text-2xl">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="hidden md:hidden bg-amber-600 px-6 pb-4" id="mobile-menu">
+    <a class="block py-2 text-amber-100 hover:text-white font-semibold border-b border-amber-500" href="#">
+     Home
+    </a>
+    <a class="block py-2 text-amber-100 hover:text-white font-semibold border-b border-amber-500" href="#about-us">
+     About
+    </a>
+    <a class="block py-2 text-amber-100 hover:text-white font-semibold border-b border-amber-500" href="#contact">
+     Contact
+    </a>
+    <a class="block py-2 text-amber-100 hover:text-white font-semibold" href="#blog">
+     Blog
+    </a>
+   </div>
+  </nav>
+  <!-- Header Hero Section -->
+  <header class="relative w-full h-screen pt-16">
+   <img alt="A majestic phinisi boat sailing the clear turquoise waters of Flores Sea under a bright blue sky with scattered clouds" class="absolute inset-0 w-full h-full object-cover" height="1080" loading="eager" src="https://storage.googleapis.com/a1aa/image/bc891339-4b34-4bcc-128a-63a12594d001.jpg" width="1920"/>
+   <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center px-6 text-center">
+    <h1 class="text-white text-4xl sm:text-6xl font-extrabold drop-shadow-lg max-w-4xl leading-tight">
+     Flores &amp; Komodo Adventures
+    </h1>
+    <p class="mt-4 text-lg sm:text-2xl text-gray-200 max-w-3xl">
+     Private &amp; Open Trips – Komodo Island │ Bajawa │ Ruteng …
+    </p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+     <a class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md shadow-md transition" href="#open-private-trips">
+      View Open Trips
+     </a>
+     <a class="px-8 py-3 border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white font-semibold rounded-md shadow-md transition" href="#open-private-trips">
+      Book Private Trip
+     </a>
+    </div>
+    <div class="absolute bottom-8 animate-bounce">
+     <a aria-label="Scroll down to Why Flores section" href="#why-flores">
+      <i class="fas fa-chevron-down text-white text-3xl">
+      </i>
+     </a>
+    </div>
+   </div>
+  </header>
+  <!-- Why Flores? Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto text-center" id="why-flores">
+   <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-amber-600">
+    Why Choose Flores?
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 max-w-6xl mx-auto">
+    <div class="flex flex-col items-center space-y-4">
+     <img alt="Icon representing Komodo Dragon" class="w-24 h-24" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/419c1441-df6c-4ae1-1915-47887918a6b3.jpg" width="96"/>
+     <h3 class="text-xl font-semibold text-amber-700">
+      Natural Wonders
+     </h3>
+     <p class="text-gray-600 max-w-xs">
+      Discover the legendary Komodo dragons, the vibrant Kelimutu Lake, and breathtaking landscapes unique to Flores.
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-4">
+     <img alt="Icon representing Traditional Bena Village and Ngada customs" class="w-24 h-24" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0370b89a-64d3-48dd-2b59-40c811f65ae6.jpg" width="96"/>
+     <h3 class="text-xl font-semibold text-amber-700">
+      Local Culture
+     </h3>
+     <p class="text-gray-600 max-w-xs">
+      Immerse yourself in the rich traditions of Bena Village and experience the vibrant Ngada customs firsthand.
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-4">
+     <img alt="Icon representing trekking, snorkeling, and diving adventures" class="w-24 h-24" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/61c0e576-feb0-48ca-6c98-befccd6f7701.jpg" width="96"/>
+     <h3 class="text-xl font-semibold text-amber-700">
+      Adventure
+     </h3>
+     <p class="text-gray-600 max-w-xs">
+      Trek rugged trails, snorkel vibrant coral reefs, and dive into crystal-clear waters teeming with marine life.
+     </p>
+    </div>
+    <div class="flex flex-col items-center space-y-4">
+     <img alt="Icon representing fully guided, safe, comfortable, and well-planned trips" class="w-24 h-24" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2ed7aaea-fd23-4686-3bd5-9411a5157e60.jpg" width="96"/>
+     <h3 class="text-xl font-semibold text-amber-700">
+      Seamless Trips
+     </h3>
+     <p class="text-gray-600 max-w-xs">
+      Enjoy fully guided, safe, and comfortable journeys meticulously planned for your ultimate peace of mind.
+     </p>
+    </div>
+   </div>
+   <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    <img alt="Group of travelers trekking through lush green mountains in Flores with smiles and backpacks" class="rounded-lg shadow-lg object-cover w-full h-64" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4f1477ca-4702-481c-0e38-fa3f9e211e12.jpg" width="400"/>
+    <img alt="Snorkeler exploring vibrant coral reefs underwater in Flores sea with colorful fish swimming around" class="rounded-lg shadow-lg object-cover w-full h-64" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5c400d57-ec15-4d4e-c9be-74aa38d9beb6.jpg" width="400"/>
+    <img alt="Traveler interacting with local Ngada people in traditional attire during a cultural ceremony in Flores" class="rounded-lg shadow-lg object-cover w-full h-64" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/06c396c2-8879-4e6b-e874-4ea5ab1a65bc.jpg" width="400"/>
+    <img alt="Panoramic scenic view of Kelimutu Lake with its three colorful volcanic crater lakes surrounded by lush forest" class="rounded-lg shadow-lg object-cover w-full h-64" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/096681dc-7d5d-40ce-9296-6706aa8b10cb.jpg" width="400"/>
+   </div>
+  </section>
+  <!-- Highlight Open Trip & Private Trip Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12" id="open-private-trips">
+   <div class="flex flex-col bg-white rounded-xl shadow-lg overflow-hidden">
+    <img alt="A stunning aerial view of Komodo Island coastline with turquoise waters and rugged hills" class="w-full h-64 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/15265e4b-7638-49bf-fcd0-58bbc1f41423.jpg" width="600"/>
+    <div class="p-6 flex flex-col justify-between flex-grow">
+     <div>
+      <h3 class="text-2xl font-bold text-amber-600 mb-2">
+       Open Trips
+      </h3>
+      <p class="text-gray-700 mb-4">
+       Next Dates:
+       <span class="font-semibold">
+        July 10, July 24, August 7
+       </span>
+       <br/>
+       Starting from
+       <span class="font-semibold text-amber-600">
+        $1,200
+       </span>
+      </p>
+     </div>
+     <a class="inline-block mt-auto px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md shadow-md text-center transition" href="#">
+      View Details
+     </a>
+    </div>
+   </div>
+   <div class="flex flex-col bg-white rounded-xl shadow-lg overflow-hidden">
+    <img alt="Close-up of a traditional phinisi boat anchored in calm waters with blue sky" class="w-full h-64 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8d507a4e-101b-4e99-97bb-e09867ba038e.jpg" width="600"/>
+    <div class="p-6 flex flex-col justify-between flex-grow">
+     <div>
+      <h3 class="text-2xl font-bold text-amber-600 mb-2">
+       Private Trips
+      </h3>
+      <p class="text-gray-700 mb-4">
+       Custom Trip Available tailored to your preferences and schedule.
+      </p>
+     </div>
+     <a class="inline-block mt-auto px-6 py-3 border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white font-semibold rounded-md shadow-md text-center transition" href="#">
+      Book Now
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Small Supporting Photos -->
+  <section class="max-w-7xl mx-auto px-6 mb-16 grid grid-cols-1 sm:grid-cols-3 gap-6">
+   <img alt="Small traditional boat floating on calm sea waters with clear blue sky" class="rounded-lg shadow-md object-cover w-full h-64" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e783498e-ffec-4a36-f9e5-05e47b0f1121.jpg" width="400"/>
+   <img alt="Group of happy travelers enjoying an activity on a boat, smiling and laughing under the sun" class="rounded-lg shadow-md object-cover w-full h-64" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6ca47daf-a36f-4cb6-38e2-b54be8551c48.jpg" width="400"/>
+   <img alt="Golden sunset view from a boat sailing on calm waters with silhouettes of islands in the distance" class="rounded-lg shadow-md object-cover w-full h-64" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/2c5515d6-f573-483f-e918-0335b1357840.jpg" width="400"/>
+  </section>
+  <!-- Featured Destinations Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto text-center" id="featured-destinations">
+   <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-amber-600">
+    Featured Destinations
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6">
+     <img alt="Close-up of a Komodo dragon walking on rocky terrain in its natural habitat" class="rounded-lg mb-4 object-cover w-full h-40" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9017eebf-a9b1-4884-f899-2b4d28c75221.jpg" width="300"/>
+     <div class="flex items-center space-x-3 mb-2">
+      <i class="fas fa-dragon text-amber-600 text-2xl">
+      </i>
+      <h3 class="text-xl font-semibold text-amber-700">
+       Pulau Komodo
+      </h3>
+     </div>
+     <p class="text-gray-600">
+      Home of the legendary Komodo dragons and stunning rugged landscapes.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6">
+     <img alt="Traditional Bajawa village houses with thatched roofs surrounded by lush greenery and mountains" class="rounded-lg mb-4 object-cover w-full h-40" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e64d1158-ce29-43f5-2dff-20f288359485.jpg" width="300"/>
+     <div class="flex items-center space-x-3 mb-2">
+      <i class="fas fa-home text-amber-600 text-2xl">
+      </i>
+      <h3 class="text-xl font-semibold text-amber-700">
+       Bajawa
+      </h3>
+     </div>
+     <p class="text-gray-600">
+      Experience authentic village life and rich Ngada cultural heritage.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6">
+     <img alt="Aerial view of Lingko spiderweb rice fields in Ruteng with intricate green patterns" class="rounded-lg mb-4 object-cover w-full h-40" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9be337e7-93a1-419e-ad57-7369a1750c70.jpg" width="300"/>
+     <div class="flex items-center space-x-3 mb-2">
+      <i class="fas fa-seedling text-amber-600 text-2xl">
+      </i>
+      <h3 class="text-xl font-semibold text-amber-700">
+       Ruteng
+      </h3>
+     </div>
+     <p class="text-gray-600">
+      Marvel at the unique Lingko spiderweb rice fields and scenic highlands.
+     </p>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col items-center p-6">
+     <img alt="Colorful Kelimutu Lake with its three volcanic crater lakes in Ende surrounded by forest" class="rounded-lg mb-4 object-cover w-full h-40" height="200" loading="lazy" src="https://storage.googleapis.com/a1aa/image/715f6fe0-e407-44c6-0d1e-7e966503dd27.jpg" width="300"/>
+     <div class="flex items-center space-x-3 mb-2">
+      <i class="fas fa-water text-amber-600 text-2xl">
+      </i>
+      <h3 class="text-xl font-semibold text-amber-700">
+       Ende
+      </h3>
+     </div>
+     <p class="text-gray-600">
+      Visit the mystical Kelimutu Lake with its ever-changing tri-colored waters.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Boats & Accommodation Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+   <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-amber-600 text-center">
+    Boats &amp; Accommodation
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+     <img alt="Interior of a traditional phinisi boat with wooden furnishings and cozy seating area" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/690f058f-bd80-43b9-6621-8afc9b152ffc.jpg" width="400"/>
+     <div class="p-6 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-amber-700 mb-2">
+       Boats
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Experience comfort and tradition aboard our well-maintained phinisi boats, perfect for island hopping.
+      </p>
+      <a class="mt-6 inline-block px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md shadow-md text-center transition" href="#">
+       View All
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+     <img alt="Cozy and inviting hotel room with modern decor, large bed, and warm lighting" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4ed13ca8-0c28-400d-c8c2-200dadd085bd.jpg" width="400"/>
+     <div class="p-6 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-amber-700 mb-2">
+       Hotels
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Stay in comfortable hotels offering modern amenities and easy access to local attractions.
+      </p>
+      <a class="mt-6 inline-block px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md shadow-md text-center transition" href="#">
+       View All
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+     <img alt="Traditional local homestay house with wooden walls and thatched roof surrounded by tropical plants" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5ddc5ab1-627d-4b5f-e291-afdbc330dbbd.jpg" width="400"/>
+     <div class="p-6 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-amber-700 mb-2">
+       Homestays
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Connect with local families and experience authentic Flores hospitality in cozy homestays.
+      </p>
+      <a class="mt-6 inline-block px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md shadow-md text-center transition" href="#">
+       View All
+      </a>
+     </div>
+    </div>
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+     <img alt="Beautiful natural camping or glamping setup with tents surrounded by trees and mountains" class="w-full h-48 object-cover" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3d6fd588-6702-49fc-98cd-8e61bd71660d.jpg" width="400"/>
+     <div class="p-6 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-amber-700 mb-2">
+       Camping &amp; Glamping
+      </h3>
+      <p class="text-gray-600 flex-grow">
+       Enjoy nature up close with our safe and comfortable camping and glamping options in scenic spots.
+      </p>
+      <a class="mt-6 inline-block px-6 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md shadow-md text-center transition" href="#">
+       View All
+      </a>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Brief Testimonials Section -->
+  <section aria-label="Testimonials" class="relative py-20 px-6 bg-amber-50 overflow-hidden">
+   <div aria-hidden="true" class="absolute inset-0 opacity-20 -z-10">
+    <img alt="Komodo Island background with tropical island and sea under blue sky" class="w-full h-full object-cover" height="600" src="https://storage.googleapis.com/a1aa/image/73588c7f-605f-4aad-fc6d-69477e5759c7.jpg" width="1920"/>
+   </div>
+   <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-amber-600 text-center">
+    What Our Travelers Say
+   </h2>
+   <div class="max-w-5xl mx-auto flex space-x-8 overflow-x-auto snap-x snap-mandatory scrollbar-thin scrollbar-thumb-amber-400 scrollbar-track-amber-100" tabindex="0">
+    <article class="snap-center flex-shrink-0 w-80 bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+     <img alt="Smiling female traveler with sun hat enjoying her trip in Komodo" class="rounded-full w-24 h-24 mb-4 object-cover" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/f0452360-0a13-40c5-b119-f081250ed552.jpg" width="96"/>
+     <p class="text-gray-700 italic mb-4">
+      “The trip to Komodo was truly special. Seeing the dragons up close and sailing on the phinisi boat was unforgettable!”
+     </p>
+     <p class="font-semibold text-amber-600">
+      - Sarah M.
+     </p>
+    </article>
+    <article class="snap-center flex-shrink-0 w-80 bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+     <img alt="Happy male traveler with backpack smiling during a trekking adventure in Flores" class="rounded-full w-24 h-24 mb-4 object-cover" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b078e569-dfa9-4459-4db5-828e54679369.jpg" width="96"/>
+     <p class="text-gray-700 italic mb-4">
+      “The guides were fantastic and the itinerary was perfect. I loved the cultural visits and the natural beauty of Flores.”
+     </p>
+     <p class="font-semibold text-amber-600">
+      - James L.
+     </p>
+    </article>
+    <article class="snap-center flex-shrink-0 w-80 bg-white rounded-xl shadow-lg p-6 flex flex-col items-center text-center">
+     <img alt="Smiling female traveler enjoying snorkeling in clear waters of Flores" class="rounded-full w-24 h-24 mb-4 object-cover" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c780527a-9b47-4f35-8461-4cc9db41f519.jpg" width="96"/>
+     <p class="text-gray-700 italic mb-4">
+      “Snorkeling in Flores was breathtaking. The marine life was vibrant and the whole trip was seamless and relaxing.”
+     </p>
+     <p class="font-semibold text-amber-600">
+      - Emily R.
+     </p>
+    </article>
+   </div>
+  </section>
+  <!-- Gallery Preview Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto text-center" id="gallery-preview">
+   <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-amber-600">
+    Gallery Preview
+   </h2>
+   <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-6xl mx-auto">
+    <img alt="Close-up of a Komodo dragon with textured skin and sharp eyes in natural habitat" class="rounded-lg shadow-lg object-cover w-full h-48" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/31693759-9953-484f-6b43-6ec5ece0577c.jpg" width="400"/>
+    <img alt="Golden sunset over a traditional boat sailing on calm sea waters with orange and pink sky" class="rounded-lg shadow-lg object-cover w-full h-48" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c07ce685-8d68-4636-63a1-84ecbb9e2d2f.jpg" width="400"/>
+    <img alt="Group trekking through lush green scenic terrain with mountains and blue sky" class="rounded-lg shadow-lg object-cover w-full h-48" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/cf311a8a-5b0e-4dd1-d08c-2189496512d4.jpg" width="400"/>
+    <img alt="Traditional Flores village architecture with wooden houses and thatched roofs surrounded by nature" class="rounded-lg shadow-lg object-cover w-full h-48" height="300" loading="lazy" src="https://storage.googleapis.com/a1aa/image/15811aaa-6523-41d8-89ad-972a007811f9.jpg" width="400"/>
+   </div>
+   <div class="mt-10">
+    <a class="inline-block px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md shadow-md transition" href="#">
+     View Full Gallery
+    </a>
+   </div>
+  </section>
+  <!-- About Us & Call-to-Action Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto bg-amber-50 rounded-xl shadow-lg flex flex-col md:flex-row items-center gap-10" id="about-us">
+   <img alt="Photo of a small local team of FloresGoldKomodo guides smiling and standing together outdoors" class="rounded-xl w-full max-w-sm object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/9cf71b58-56d7-4ee9-c7f6-e2536c815af0.jpg" width="400"/>
+   <div class="max-w-xl text-center md:text-left">
+    <h2 class="text-3xl font-bold text-amber-600 mb-6">
+     About Us
+    </h2>
+    <p class="text-gray-700 mb-8 leading-relaxed">
+     FloresGoldKomodo is your trusted partner for authentic adventures in Flores and Komodo. With experience since 2010, we focus on providing safe, comfortable, and unforgettable experiences that truly connect you with the local culture and natural wonders.
+    </p>
+    <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+     <a class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md shadow-md transition text-center" href="#contact">
+      Contact Us
+     </a>
+     <a class="px-8 py-3 border border-amber-500 text-amber-500 hover:bg-amber-500 hover:text-white font-semibold rounded-md shadow-md transition text-center" href="#open-private-trips">
+      Book Your Trip
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Blog Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto" id="blog">
+   <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-amber-600 text-center">
+    Blog
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+    <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+     <img alt="Traveler hiking a scenic trail with mountains and blue sky in Flores" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/0b4a7675-21d6-4a00-0044-bf4948adbb16.jpg" width="600"/>
+     <div class="p-6 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-amber-700 mb-2">
+       Top 5 Hiking Trails in Flores
+      </h3>
+      <p class="text-gray-600 flex-grow mb-4">
+       Discover the most breathtaking hiking trails that showcase Flores' natural beauty and cultural heritage.
+      </p>
+      <a class="mt-auto inline-block text-amber-600 hover:text-amber-800 font-semibold transition" href="#">
+       Read More →
+      </a>
+     </div>
+    </article>
+    <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+     <img alt="Traditional Flores village ceremony with locals in colorful attire" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/8d65022b-1510-4c15-67b9-522b750e605e.jpg" width="600"/>
+     <div class="p-6 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-amber-700 mb-2">
+       Experiencing Local Culture in Flores
+      </h3>
+      <p class="text-gray-600 flex-grow mb-4">
+       Learn about the rich traditions and customs of the Ngada people and how to respectfully engage.
+      </p>
+      <a class="mt-auto inline-block text-amber-600 hover:text-amber-800 font-semibold transition" href="#">
+       Read More →
+      </a>
+     </div>
+    </article>
+    <article class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+     <img alt="Snorkeler exploring vibrant coral reefs underwater in Flores sea" class="w-full h-48 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/74c0b129-2b76-4cd5-381d-29f03fb34c20.jpg" width="600"/>
+     <div class="p-6 flex flex-col flex-grow">
+      <h3 class="text-xl font-semibold text-amber-700 mb-2">
+       Best Snorkeling Spots Around Komodo Island
+      </h3>
+      <p class="text-gray-600 flex-grow mb-4">
+       Dive into crystal-clear waters and explore the vibrant marine life in the Komodo National Park.
+      </p>
+      <a class="mt-auto inline-block text-amber-600 hover:text-amber-800 font-semibold transition" href="#">
+       Read More →
+      </a>
+     </div>
+    </article>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto" id="contact">
+   <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-amber-600 text-center">
+    Contact Us
+   </h2>
+   <form action="#" class="max-w-3xl mx-auto bg-white rounded-xl shadow-lg p-8 grid grid-cols-1 gap-6" method="POST">
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="name">
+      Name
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500" id="name" name="name" required="" type="text"/>
+    </div>
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="email">
+      Email
+     </label>
+     <input class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500" id="email" name="email" required="" type="email"/>
+    </div>
+    <div>
+     <label class="block text-gray-700 font-semibold mb-2" for="message">
+      Message
+     </label>
+     <textarea class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-amber-500" id="message" name="message" required="" rows="5"></textarea>
+    </div>
+    <button class="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-semibold rounded-md shadow-md transition" type="submit">
+     Send Message
+    </button>
+   </form>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-amber-700 text-amber-100 mt-20">
+   <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-3 gap-10">
+    <nav aria-label="Footer Sitemap" class="space-y-3">
+     <h3 class="font-semibold text-lg mb-3">
+      Sitemap
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:underline" href="#">
+        Home
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#open-private-trips">
+        Open Trips
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#open-private-trips">
+        Private Trips
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#featured-destinations">
+        Destinations
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#gallery-preview">
+        Gallery
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#about-us">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#contact">
+        Contact
+       </a>
+      </li>
+      <li>
+       <a class="hover:underline" href="#blog">
+        Blog
+       </a>
+      </li>
+     </ul>
+    </nav>
+    <div>
+     <h3 class="font-semibold text-lg mb-3">
+      Contact Us
+     </h3>
+     <p class="flex items-center space-x-3 mb-3">
+      <i class="fab fa-whatsapp text-amber-400 text-xl">
+      </i>
+      <a class="hover:underline" href="https://wa.me/6281234567890">
+       +62 812-3456-7890
+      </a>
+     </p>
+     <p class="flex items-center space-x-3 mb-3">
+      <i class="fas fa-envelope text-amber-400 text-xl">
+      </i>
+      <a class="hover:underline" href="mailto:info@floresgoldkomodo.com">
+       info@floresgoldkomodo.com
+      </a>
+     </p>
+     <p class="flex items-center space-x-3">
+      <i class="fab fa-instagram text-amber-400 text-xl">
+      </i>
+      <a class="hover:underline" href="https://instagram.com/floresgoldkomodo" rel="noopener noreferrer" target="_blank">
+       @floresgoldkomodo
+      </a>
+     </p>
+    </div>
+    <div>
+     <h3 class="font-semibold text-lg mb-3">
+      Follow Us
+     </h3>
+     <div class="flex space-x-6 text-amber-400 text-2xl">
+      <a aria-label="WhatsApp" class="hover:text-white" href="https://wa.me/6281234567890" rel="noopener noreferrer" target="_blank">
+       <i class="fab fa-whatsapp">
+       </i>
+      </a>
+      <a aria-label="Instagram" class="hover:text-white" href="https://instagram.com/floresgoldkomodo" rel="noopener noreferrer" target="_blank">
+       <i class="fab fa-instagram">
+       </i>
+      </a>
+      <a aria-label="Facebook" class="hover:text-white" href="https://facebook.com/floresgoldkomodo" rel="noopener noreferrer" target="_blank">
+       <i class="fab fa-facebook-f">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="border-t border-amber-600 text-center py-6 text-sm select-none">
+    © 2025 FloresGoldKomodo. All Rights Reserved.
+   </div>
+  </footer>
+  <script>
+   const btn = document.getElementById('mobile-menu-button');
+   const menu = document.getElementById('mobile-menu');
+   btn.addEventListener('click', () => {
+     menu.classList.toggle('hidden');
+   });
+  </script>
+ </body>
+</html>
